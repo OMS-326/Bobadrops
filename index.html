@@ -4,12 +4,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
     </head>
+    <script>
+        let hasclicked = false;
+        function color() {
+        if (!hasclicked) {
+            alert('dont click this one again');
+        }
+        if (hasclicked) {
+            document.body.style.backgroundColor= "#F6FF00";
+            alert('told you gng');
+        }
+        hasclicked = true;
+        }
+    </script>
     <body>
         <button class ="button1" type="button" onclick="alert('i will always be... tung tung sahere')">click</button>
-        <button class ="button2" type="button" onclick="alert('dont press this one again')">click</button>
+        <button class ="button2" type="button" onclick="color()">click</button>
         <h1>dr</h1>
         <p>dr pepper (extremely tuff)</p>
         <img class ="pepper"
         src = "https://media.tenor.com/CsH6d1zExDEAAAAM/spin-dr-pepper-dr-pepper.gif"
+        
         />
+    
 </html>

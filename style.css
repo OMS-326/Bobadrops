@@ -12,6 +12,9 @@
     background: red;
     width: 200px;
 }
+.button2:hover {
+    width: 200px;
+}
 body {
     text-align: center;
     font-family: 'sans-serif';
