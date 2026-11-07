@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css" /> //links stylesheet
     </head>
     
     <body>
@@ -10,7 +10,7 @@
             <img class="tung"
             src = "assets/fun-memes.gif">
         </div>
-        <div id="page">
+        <div id="page"> //Default page
             <button class ="button1" type="button" onclick="alert('i will always be... tung tung sahere')">click</button>
             <button class ="button2" type="button" onclick="color()">click</button>
             <h1>dr</h1>
@@ -21,7 +21,7 @@
         />
     </div>
     <script>
-        ttt.style.display = "none";
+        ttt.style.display = "none"; //does not show t^3 by default
         let hasclicked = false;
         function color() {
         if (!hasclicked) {
@@ -29,7 +29,8 @@
             hasclicked = true;
         }
         else {
-            var page = document.getElementById("page")
+            var page = document.getElementById("page") //if it is the second time its being clicked,
+            //it will change the background and only show tung tung
             page.style.display = "none";
             ttt.style.display = "block";
             document.body.style.backgroundColor= "red";
