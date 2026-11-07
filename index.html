@@ -4,27 +4,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
     </head>
+    
+    <body>
+        <div id="ttt">
+            <img class="tung"
+            src = "assets/fun-memes.gif">
+        </div>
+        <div id="page">
+            <button class ="button1" type="button" onclick="alert('i will always be... tung tung sahere')">click</button>
+            <button class ="button2" type="button" onclick="color()">click</button>
+            <h1>dr</h1>
+            <p>dr pepper (extremely tuff)</p>
+            <img class ="pepper"
+            src = "assets/spin-dr-pepper-dr-pepper.gif"
+        
+        />
+    </div>
     <script>
+        ttt.style.display = "none";
         let hasclicked = false;
         function color() {
         if (!hasclicked) {
             alert('dont click this one again');
+            hasclicked = true;
         }
-        if (hasclicked) {
-            document.body.style.backgroundColor= "#F6FF00";
-            alert('told you gng');
-        }
-        hasclicked = true;
+        else {
+            var page = document.getElementById("page")
+            page.style.display = "none";
+            ttt.style.display = "block";
+            document.body.style.backgroundColor= "red";
+            alert("told you gng");
+            
+            }      
         }
     </script>
-    <body>
-        <button class ="button1" type="button" onclick="alert('i will always be... tung tung sahere')">click</button>
-        <button class ="button2" type="button" onclick="color()">click</button>
-        <h1>dr</h1>
-        <p>dr pepper (extremely tuff)</p>
-        <img class ="pepper"
-        src = "https://media.tenor.com/CsH6d1zExDEAAAAM/spin-dr-pepper-dr-pepper.gif"
-        
-        />
-    
+</body>
 </html>
