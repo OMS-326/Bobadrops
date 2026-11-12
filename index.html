@@ -6,10 +6,7 @@
     </head>
     
     <body>
-        <div id="ttt">
-            <img class="tung"
-            src = "assets/fun-memes.gif">
-        </div>
+        
         <div id="page"> <!-- Main page -->
             <button class ="button1" type="button" onclick="alert('i will always be... tung tung sahere')">click</button>
             <button class ="button2" type="button" onclick="color()">click</button>
@@ -22,19 +19,14 @@
     </div>
     <script>
         let hasclicked = false;
-        ttt.style.display = "none"; //hides tung tung by default
         function color() {
         if (!hasclicked) {
             alert('dont click this one again');
             hasclicked = true;
         }
         else {
-            var page = document.getElementById("page"); //changes page if button clicked twice
-            page.style.display = "none";
-            ttt.style.display = "block";
-            document.body.style.backgroundColor= "red";
             alert("told you gng");
-            
+            window.location.href = "ttt.html";
             }      
         }
     </script>
