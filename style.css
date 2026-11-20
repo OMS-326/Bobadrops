@@ -1,19 +1,56 @@
+:root {
+    --button-corners: 8px;
+    --button-width: 150px;
+    --button-height: 60px;
+}
 .pepper {
-    width: 200px;
+    width: 600px;
     height: 500px;
     border-radius: 20px;
 }
 .button1 {
-    color: red;
-    background: blue;
+    color: black;
+    background: white;
+    border-radius: var(--button-corners);
+    width: var(--button-width);
+    height: var(--button-height);
+    font-size: 20pt;
+    margin-bottom: 0px;
 }
 .button1:hover {
-    color: blue;
-    background: red;
+    color: white;
+    background: black;
     width: 200px;
+    font-size: 25pt;
+}
+.button2 {
+    color: black;
+    background-color: white;
+    border-radius: var(--button-corners);
+    width: var(--button-width);
+    height: var(--button-height);
+    font-size: 20pt;
+    margin-bottom: 0px;
 }
 .button2:hover {
+    color: white;
+    background-color: black;
     width: 200px;
+    font-size: 25pt;
+}
+.header {
+    background-color: #26ceaa;
+    border-radius: 10px;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+.title {
+    color: green;
+    font-size: 60pt;
+    margin: 0px;
+}
+.sub {
+    margin: 10px;
 }
 body {
     text-align: center;
