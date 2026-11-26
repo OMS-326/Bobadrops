@@ -52,6 +52,12 @@
 .sub {
     margin: 10px;
 }
+.video {
+    width: 400px;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+}
 body {
     text-align: center;
     font-family: 'sans-serif';
